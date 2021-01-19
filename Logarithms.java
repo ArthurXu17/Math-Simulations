@@ -24,21 +24,11 @@ public class Logarithms {
 		System.out.println("Enter in the base.");
 		double base = sc.nextDouble();
 		
-		System.out.println(simulate(1000,base));
-		System.out.println(simulate(10000,base));
-		System.out.println(simulate(100000,base));
-		System.out.println(simulate(1000000,base));
-		System.out.println((base-1)/(base+1));
-		
-		/*System.out.println(simulate(999999,2));
-		System.out.println(simulate(999999,3));
-		System.out.println(simulate(999999,4));
-		System.out.println(simulate(999999,5));
-		System.out.println(simulate(999999,6));
-		System.out.println(simulate(999999,7));
-		System.out.println(simulate(999999,8));
-		System.out.println(simulate(999999,9));
-		System.out.println(simulate(999999,10));*/
+		System.out.println("10^3 simulations: " + simulate(1000,base));
+		System.out.println("10^4 simulations: " + simulate(10000,base));
+		System.out.println("10^5 simulations: " + simulate(100000,base));
+		System.out.println("10^6 simulations: " + simulate(1000000,base));
+		System.out.println("Theoretical: " + (base-1)/(base+1));
 	}
 
 }
